@@ -3,11 +3,11 @@ import React , { Component} from 'react';
 import { Layout } from 'antd';
 
 import SearchHeader from "./components/header/SearchHeader";
-import Users from "./components/users/Users";
+import Repos from "./components/users/Repos";
 import './App.css';
 import { getRepositoryData } from './actions/repositoryActions';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header,  Content } = Layout;
 
 class App extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class App extends Component {
          <SearchHeader onChange = {this.handleChange} value = {this.state.searchVal} /> 
       </Header>
       <Content class="content">
-         <Users items = {this.state.items}  />
+         <Repos items = {this.state.items} totalCount = {this.state.totalCount} />
       </Content>
      
     </Layout>
