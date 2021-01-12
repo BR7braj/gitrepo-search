@@ -1,0 +1,19 @@
+
+
+#search-input {
+    display: inline;
+    color: black;
+    width : 40vw;
+    
+}
+
+#input-col {
+    padding : 12px 0 0 0;
+}
+
+#git-icon {
+    color : #ffff ;
+    font-size : 40px;
+    margin:10px 0 0 30px;
+
+}
